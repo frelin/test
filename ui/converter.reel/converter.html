@@ -20,7 +20,7 @@
                 "value": ""
             },
             "bindings": {
-                "value": {"<->": "(+@fahrenheitNumberfield.value - 32)"}
+                "value": {"<->": "(+@fahrenheitNumberfield.value - 32)/1.8"}
             }
         },
         "fahrenheitNumberfield": {
@@ -42,8 +42,10 @@
         <h2>
             Converter
         </h2>
-        C<input type="number" data-montage-id="celciusNumberField">
-        F<input type="number" data-montage-id="fahrenheitNumberfield">
+        C
+        <input type="number" data-montage-id="celciusNumberField">
+        F
+        <input type="number" data-montage-id="fahrenheitNumberfield">
     </div>
 </body>
 </html>
