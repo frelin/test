@@ -2,23 +2,35 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Main</title>
-
+    <title>
+        Main
+    </title>
     <link rel="stylesheet" href="main.css">
-
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "converter": {
+            "prototype": "ui/converter.reel",
+            "properties": {
+                "element": {"#": "converter"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         }
+    }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1>Hello Worlden!</h1>
+        <h1>
+            Hello Worlden!
+        </h1>
+        <div data-montage-id="converter"></div>
     </div>
 </body>
 </html>
