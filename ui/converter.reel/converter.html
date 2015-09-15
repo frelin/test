@@ -9,13 +9,55 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "celcius": {
+            "prototype": "montage/ui/text-field.reel",
+            "properties": {
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Text"
+            }
+        },
+        "celciusNumberField": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "element": {"#": "celciusNumberField"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": 100
+            }
+        },
+        "fahrenheit": {
+            "prototype": "montage/ui/text-field.reel",
+            "properties": {
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Text"
+            }
+        },
+        "number": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "element": {"#": "number"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": 100
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Converter">
-        <h2>Converter</h2>
+        <h2>
+            Converter
+        </h2>
+        <input type="number" data-montage-id="celciusNumberField">
+        <input type="number" data-montage-id="number">
     </div>
 </body>
 </html>
