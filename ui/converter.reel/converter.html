@@ -16,6 +16,7 @@
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
+                "enabled": false,
                 "value": "Text"
             }
         },
@@ -38,14 +39,22 @@
                 "value": "Text"
             }
         },
-        "number": {
+        "fahrenheitNumberfield": {
             "prototype": "digit/ui/number-field.reel",
             "properties": {
-                "element": {"#": "number"},
+                "element": {"#": "fahrenheitNumberfield"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
                 "value": 100
+            }
+        },
+        "listItem": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         }
     }
@@ -57,7 +66,7 @@
             Converter
         </h2>
         <input type="number" data-montage-id="celciusNumberField">
-        <input type="number" data-montage-id="number">
+        <input type="number" data-montage-id="fahrenheitNumberfield">
     </div>
 </body>
 </html>
